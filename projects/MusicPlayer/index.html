@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Player</title>
+        <link rel="stylesheet" href="css/Player.css">
+    </head>
+
+    <body>
+        <input id="folderInput" type="file" class="hidden" webkitdirectory directory multiple/>
+        <label id="folderSelectButton" for="folderInput">Select a local folder that contains nothing but mp3 files</label>
+
+        <div id="app">
+            <audio id="player"></audio>
+            <div class="hidden" id="controls">
+                <div id="mediaIcons">
+                    <img
+                        id="goToPreviousSongButton"
+                        class="controlsIcon"
+                        src="img/PreviousSongButton.png">
+                    <img 
+                        id="playAndPauseButton"
+                        class="controlsIcon"
+                        src="img/PlayButton.png">
+                    <img 
+                        id="goToNextSongButton"
+                        class="controlsIcon"
+                        src="img/NextSongButton.png">
+                </div>
+                <img
+                    id="volumeButton" 
+                    class="controlsIcon"
+                    src="img/VolumeOn.png">
+
+                    <!--<input type="range" min="1" max="100" value="50" id="myRange">-->
+                <div id="timeRow">
+                    <p class="timeContent" id="currentTime">0:00</p>
+                    <input min="0" value="0" class="timeContent" type="range" id="slider">
+                    <p class="timeContent" id="endTime"></p>
+                </div>
+                <p id="songTitle">THIS IS WHERE SONG TITLE WILL GO!</p>
+            </div>
+        </div>
+
+        <script src="js/Player.js"></script>
+    </body>
+</html>

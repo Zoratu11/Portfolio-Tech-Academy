@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pomodoro</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/timer.css">
+    </head>
+
+    <body>
+        <div id="app">
+            <div class="buttonRow">
+                <button id="workButton">WORK</button>
+                <button id="breakButton">BREAK</button>
+            </div>
+
+            <div id="timer">
+                <div class="display">
+                    <p id="plus">+</p>
+                    <p id="minute">25</p>
+                    <p>:</p>
+                    <p id="second">00</p>
+                    <p id="minus">-</p>
+                </div>
+            </div>
+
+            <div class="buttonRow">
+                <button id="startButton">START</button>
+                <button id="resetButton">RESET</button>
+            </div>
+
+            <audio src="http://www.orangefreesounds.com/wp-content/uploads/2016/10/Alarm-tone.mp3" id="alarm"></audio>
+        </div>
+        <script src="js/timer.js"></script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drawing App</title>
+        <link rel="stylesheet" href="css/paint.css">
+    </head>
+    <body>
+        <div id="app">
+            <!--Buttons go here-->
+            <div class="button" id="editColorButton">
+                <label class="label">Edit Color</label>
+                <input id="colorPicker" type="color">
+            </div>
+
+            <div class="button" id="editLineWidthButton">
+                <label class="label">Edit line size</label>
+                <select name="lineSizes" id="lineWidthPicker">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+
+            <div class="button">
+                <a id="saveButton" download="YourImage.jpg">
+                    <label class="label">Download as image</label>
+                </a>
+            </div>
+
+            <div class="button">
+                <label onclick="window.location.reload()" id="clearButton" class="label">Clear Drawing!</label>
+            </div>
+
+
+            <!--Pop up for when you click the buttons, the content is customized
+            according to what button is pressed-->
+            <div id="popup">
+            </div>
+
+            <canvas id="drawingCanvas">
+
+            </canvas>
+        </div>
+
+        <script src="js/bundle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+#app {
+    z-index: -2;
+}
+
+.button {
+    box-shadow: 5px 5px rgba(130, 130, 130, 0.2);
+    width: 10vw;
+    display: inline-block;
+    margin: 5px;
+}
+
+.content {
+    height: 5vh;
+    width: 100%;
+}
+
+.label {
+    height: 2vh;
+    width: 100%;
+}
+
+#editSampleColor {
+    background-color: black;
+}
+
+.vl {
+    width: 1px;
+    background-color: black;
+    height: 8vh;
+    display: inline-block;
+}
+
+#popup {
+    display: none;
+    height: 70vh;
+    width: 90vw;
+    margin: 0 auto;
+    background-color: rgba(160, 160, 160, 0.4);
+}
+
+img {
+    width: 35px;
+    height: auto;
+}
+
+a { 
+    text-decoration: none;
+    color:black;
+}
+
+a:visited { 
+    text-decoration: none;
+    color: black;
+}
+
+canvas {
+    cursor: crosshair;
+}
